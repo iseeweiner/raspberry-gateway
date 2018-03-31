@@ -18,13 +18,13 @@ if [ "$_IP" ]; then
 fi
 
 sleep 2
-#sleep 5 && /root/check_init.sh
+#sleep 5 && /root/raspberry-gateway/check_init.sh
 
 if [ -x /root/raspbian-recipes/wifi-to-eth-route.sh ]; then
   /root/raspbian-recipes/wifi-to-eth-route.sh
 fi
 
-sleep 2 && /root/check_wan.sh
+sleep 2 && /root/raspberry-gateway/check_wan.sh
 
 
 exit 0
